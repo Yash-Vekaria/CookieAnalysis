@@ -6,9 +6,17 @@ The assigned task is to extract the most active cookie corresponding to the quer
 Task instruction details provided by Quantcast recruiter can be found in the ```Quantcast Coding Task Exercise.pdf```. 
 
 Following are the steps to execute/test my solution:
-1. Clone the repository on your local
-2. Ensure that the cookie log file exists in the same directory as the ```most_active_cookie``` file.
-3. Provide the name of the log file as a positional command line argument and the query date with ```-d``` flag.
-4. Finally run the code as mentioned in the instructions document provided by Quantcast.
+1. Clone the repository on your local:
+   ```
+   git clone https://github.com/Yash-Vekaria/CookieAnalysis.git
+   ```
+2. Grant full permission to all the files in the ```CookieAnalysis``` directory (if you get ```permission denied:``` error.
+3. Change directory to CookieAnalysis
+   ```
+   cd CookieAnalysis
+   ```
+4. Ensure that the cookie log file CSV exists in the same directory as the ```most_active_cookie``` file.
+5. Provide the name of the CSV log file as a positional command line argument and the query date with ```-d``` flag.
+6. Finally run the code as mentioned in the instructions document provided by Quantcast.
 
 The report regarding this assignment explaining approach, code, and the testing scenarios can be referred to in the file: ```Quantcast Summer Internship 2024 Report.pdf```.
