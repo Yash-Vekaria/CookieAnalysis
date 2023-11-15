@@ -10,7 +10,7 @@ Following are the steps to execute/test my solution:
    ```
    git clone https://github.com/Yash-Vekaria/CookieAnalysis.git
    ```
-2. Grant full permission to all the files in the ```CookieAnalysis``` directory (if you get ```permission denied:``` error.
+2. Grant full permission to all the files in the ```CookieAnalysis``` directory (if you get ```permission denied:``` error)
    ```
    chmod -R 777 CookieAnalysis/
    ```
