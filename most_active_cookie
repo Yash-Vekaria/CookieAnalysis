@@ -9,9 +9,9 @@ import os
 
 
 
-class CustomError(Exception):
+class CustomError(BaseException):
 	'''
-	Custom error class.
+	Custom error class. This class has been added to raise exceptions, display custom error message on the console and then the program is terminated.
 	'''
 	def __init__(self, message="A custom error occurred!"):
 		self.message = message
