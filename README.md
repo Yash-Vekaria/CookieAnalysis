@@ -3,7 +3,7 @@ This repository constitues Quantcast's Summer Internship 2024 related coding imp
 
 The assigned task is to extract the most active cookie corresponding to the queried date from a cookie log file consisting of cookies and timestamps. 
 
-Task instruction details provided by Quantcast recruiter can be found in the ```Quantcast coding_task Exercise.pdf```. 
+Task instruction details provided by Quantcast recruiter can be found in the ```Quantcast Coding Task Exercise.pdf```. 
 
 Following are the steps to execute/test my solution:
 1. Clone the repository on your local
