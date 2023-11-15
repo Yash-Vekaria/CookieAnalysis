@@ -1,5 +1,5 @@
 # CookieAnalysis
-This repository constitues Quantcast's Summer Internship 2024 related coding implementation
+This repository constitues Quantcast's Summer Internship 2024 related coding implementation.
 
 The assigned task is to extract the most active cookie corresponding to the queried date from a cookie log file consisting of cookies and timestamps. 
 
