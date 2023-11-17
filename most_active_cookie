@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+
+# Importing necessary modules
+from datetime import datetime
+import argparse
+import re
+import os
+
+from ProcessCookieLogfile import ProcessCookieLogfile
+
+
+
+
+def main(args):
+	'''
+	Perform testing and processing of logfile to obtain the most active cookie.
+	Input: command line "args"
+	Output: NA
+	'''
+	print(args, type(args))
+	
+	# Creating a processor object and printing the most active cookie
+	try:
+		processor = ProcessCookieLogfile(args)
+		processor.print_most_active_cookie()
+	except:
+		print("Class::ProcessCookieLogfile() creation failed due to invalid commandline inputs!")
+		pass
+
+	return
+
+
+
+
+def parse_args():
+	'''
+	Parses command line arguments provided by the user
+	Input: Command line arguments: cookie logfile and date
+	Output: Returns parsed command line arguments
+	'''
+	# Instantiates parser object to input command line argument of logfile and date
+	parser = argparse.ArgumentParser()
+	parser.add_argument("logfilename", type=str, help="Enter the name of the cookie log file in the current directory.")
+	parser.add_argument("-d", "--date", type=str, required=True, help="Enter the date in YYYY-MM-DD format corresponding to which the most active cookie is to be fetched.")
+	args = parser.parse_args()
+
+	return args
+
+
+
+
+if __name__ == "__main__":
+
+	# Read and parse command line arguments provided by the user
+	args = parse_args()
+
+	# Invoking the main() function with parse command line arguments
+	main(args)
+
