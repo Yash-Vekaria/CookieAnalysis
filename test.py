@@ -190,7 +190,7 @@ class TestCookieLogProcessor(unittest.TestCase):
 			self.assertEqual(processor._check_date_format(date_), False)
 		
 		# Testing for datetime format: "%Y-%m-%dT%H:%M:%S%z"
-		# Correct filename is passed as it is not bein tested here.
+		# Correct filename is passed as it is not being tested here.
 		self.args.logfilename, self.args.date = "cookie_log.csv", "2023-11-14"
 		processor = CookieLogProcessor(self.args)
 		processor.datetime_format = "%Y-%m-%dT%H:%M:%S%z"
